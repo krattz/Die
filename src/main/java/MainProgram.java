@@ -1,5 +1,5 @@
 public class MainProgram {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Die die = new Die(6);
             die.roll();
 
@@ -14,5 +14,7 @@ public class MainProgram {
         dieDodgy6.roll();
         System.out.println("Weighted dice returns "+dieDodgy6.value);
 
+        DiceFactory die3 = new DiceFactory();
+        System.out.println("DiceFactory die: "+die3.makeDie(20));
     }
 }
