@@ -15,7 +15,7 @@ public class DieTest {
     public void setProbabilities(int [] probabilities) {
         this.probabilities = probabilities;
         sides = 6;
-        probabilities = new int[]{1, 1, 1, 1, 1, 6};
+        probabilities = new int[]{6};
         int result = 0;
         for (int probability : probabilities) {
             result += probability;
