@@ -1,7 +1,5 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
-import org.junit.Test;
 
 import java.util.Random;
 
@@ -43,7 +41,6 @@ public class Die {
                 }
             }
         }
-        @Test
     public void roll(){
         value = r.nextInt(sides )+1;
         try {
@@ -51,6 +48,5 @@ public class Die {
         }catch (NullPointerException e){
 
             logger.error(""+e);}
-Assert.assertFalse(value ==0);
     }
     }
